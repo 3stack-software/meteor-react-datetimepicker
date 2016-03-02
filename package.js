@@ -1,6 +1,6 @@
 Package.describe({
   name: '3stack:react-datetimepicker',
-  version: '4.14.30_1',
+  version: '4.14.30_2',
   summary: 'A simple react helper for <ReactDatetimePicker>',
   git: 'https://github.com/3stack-software/meteor-react-datetimepicker',
   documentation: 'README.md'
