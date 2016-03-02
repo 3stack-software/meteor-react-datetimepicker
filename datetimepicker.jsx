@@ -29,8 +29,11 @@ ReactDatetimePicker = React.createClass({
     return this.props.value !== nextProps.value;
   },
   onChange(e){
+    if (e.date === false){
+      this.props.onChange(undefined);
+      return;
+    }
     var format = this.input().data("DateTimePicker").format();
-
     // This might be expensive, but lets prevent
     // spurious updates
     if (this.props.value === e.date.format(format)){
