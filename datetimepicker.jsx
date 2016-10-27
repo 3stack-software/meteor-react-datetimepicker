@@ -7,7 +7,7 @@ ReactDatetimePicker = React.createClass({
     extra: React.PropTypes.object
   },
   input (){
-    return $(React.findDOMNode(this.refs.input));
+    return $(ReactDOM.findDOMNode(this.refs.input));
   },
   componentDidMount() {
     var defaults = DatetimePicker.defaults;
